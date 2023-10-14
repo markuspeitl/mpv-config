@@ -83,7 +83,7 @@ local settings = {
   playlist_savepath = "",
 
   --save playlist automatically after current file was unloaded
-  save_playlist_on_file_end = false,
+  save_playlist_on_file_end = true,
 
 
   --show playlist or filename every time a new file is loaded
@@ -1038,3 +1038,5 @@ mp.add_key_binding("SHIFT+ENTER", "showplaylist", toggle_playlist)
 
 mp.register_event("file-loaded", on_loaded)
 mp.register_event("end-file", on_closed)
+
+mp.add_key_binding("alt+s", save_playlist)
