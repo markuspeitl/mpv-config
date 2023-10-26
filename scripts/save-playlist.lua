@@ -33,5 +33,6 @@ function save_playlist()
   end
 end
 
--- mp.add_key_binding("alt+s", save_playlist)
+mp.add_key_binding("alt+s", save_playlist)
+mp.add_key_binding("alt+l", save_playlist)
 -- mp.set_property("save-playlist", save_playlist)
